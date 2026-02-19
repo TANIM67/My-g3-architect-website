@@ -23,7 +23,8 @@
     background-color: rgba(255, 144, 14, 0.1);;
 }
 .common-btn{
-    width: 180px;
+    max-width: 180px;
+    width: 100%;
     height: 64px;
     border: none;
     border-radius: 8px;
@@ -31,6 +32,10 @@
     font-size: 20px;
     font-weight: 600;
     color: white;
+    cursor: pointer;
+}
+.common-btn:hover{
+    background-color:rgb(116, 66, 9);
 }
 
     /* navbar styles */
@@ -84,10 +89,65 @@
     width: 100%;
 }
 
+    /* quick list */
+.quick-list{
+    /* display: flex; */
+    padding-top: 85px;
+    max-width: 1318px;
+    width: 100%;
+    margin: 0px auto;
+}
+.team{
+    max-width: 708px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.quick-container{
+    max-width: 537px;
+    width: 100%;
+    padding: 202px 73px;
+}
+#quick{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+#our{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+#features{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff900eFF;
+    margin-bottom: 22px;
+}
+.quick-container p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
     /* responsive media query */
 @media screen and (max-width: 576px){
+    .common-btn{
+        width: 70%;
+        margin-bottom: 24px;
+    }
     .navbar, 
     .links{
+        display: flex;
         flex-direction: column;
+    }
+    .quick-list{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .team{
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .quick-container{
+        padding: 0px;
     }
 }
