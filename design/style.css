@@ -22,18 +22,26 @@
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);;
 }
+.common-btn{
+    width: 180px;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
+    background-color:#ff900eFF;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
 
-    /* header styles */
-header{
+    /* navbar styles */
+.navbar{
     max-width: 1452px;
     margin: 0 auto;
-}
-.navbar{
     justify-content: space-between;
     align-items: center;
 }
 .navbar h3{
-    font-size: 45px;
+    font-size: 3rem;
     font-weight: 700;
 }
 .links{
@@ -44,4 +52,42 @@ header{
 }
 .links a{
     text-decoration: none;
+}
+
+    /* banner styles */
+.banner-container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+.banner-content{
+    max-width: 862px;
+    width: 100%;
+    margin: 0px auto;
+}
+.banner-content h3{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.banner-content button{
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.banner-container img{
+    width: 100%;
+}
+
+    /* responsive media query */
+@media screen and (max-width: 576px){
+    .navbar, 
+    .links{
+        flex-direction: column;
+    }
 }
